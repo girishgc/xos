@@ -10,7 +10,7 @@
             {
                 "humanReadableName": "service_vsg",
                 "id": 2,
-                "dns_servers": "8.8.8.8",
+                "dns_servers": "172.24.100.50",
                 "url_filter_kind": null,
                 "node_label": null
             }

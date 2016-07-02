@@ -39,4 +39,4 @@ other_keys: public_key private_key
 
 net_fix:
 	sudo devstack/net-fix.sh
-	bash -c "source $(SETUPDIR)/admin-openrc.sh; neutron subnet-update private-subnet --dns-nameservers list=true 8.8.8.8 8.8.4.4"
+	bash -c "source $(SETUPDIR)/admin-openrc.sh; neutron subnet-update private-subnet --dns-nameservers list=true 172.24.100.50 8.8.4.4"

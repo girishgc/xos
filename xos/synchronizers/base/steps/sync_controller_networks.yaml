@@ -33,7 +33,7 @@
         {% else %}
         no_gateway=true
         {% endif %}
-        dns_nameservers=8.8.8.8
+        dns_nameservers=172.24.100.50
         cidr={{ cidr }}
         {% endif %}
   {% endif %}

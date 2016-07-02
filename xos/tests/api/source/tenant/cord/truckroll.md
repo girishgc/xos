@@ -16,7 +16,7 @@ Virtual Truckroll, enable to perform basic test on user connectivity such as pin
                 "target_id": 2,
                 "scope": "container",
                 "test": "ping",
-                "argument": "8.8.8.8",
+                "argument": "172.24.100.50",
                 "result": "",
                 "result_code": "",
                 "is_synced": false,
@@ -34,7 +34,7 @@ A virtual truckroll is complete once is_synced equal true
             "target_id": 2,
             "scope": "container",
             "test": "ping",
-            "argument": "8.8.8.8"
+            "argument": "172.24.100.50"
         }
 
 + Response 201 (application/json)
@@ -46,7 +46,7 @@ A virtual truckroll is complete once is_synced equal true
             "target_id": 2,
             "scope": "container",
             "test": "ping",
-            "argument": "8.8.8.8",
+            "argument": "172.24.100.50",
             "result": null,
             "result_code": null,
             "is_synced": false,
@@ -68,7 +68,7 @@ A virtual truckroll is complete once is_synced equal true
             "target_id": 2,
             "scope": "container",
             "test": "ping",
-            "argument": "8.8.8.8",
+            "argument": "172.24.100.50",
             "result": null,
             "result_code": null,
             "is_synced": false,

@@ -278,7 +278,7 @@ class OpenStackDriver:
                                  'network_id': network_id,
                                  'ip_version': ip_version,
                                  'cidr': cidr_ip,
-                                 #'dns_nameservers': ['8.8.8.8', '8.8.4.4'],
+                                 #'dns_nameservers': ['172.24.100.50', '8.8.4.4'],
                                  'host_routes': [{'destination':'169.254.169.254/32','nexthop':metadata_ip}],
                                  'gateway_ip': None,
                                  'allocation_pools': allocation_pools}}

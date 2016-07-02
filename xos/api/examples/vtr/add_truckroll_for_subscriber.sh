@@ -19,7 +19,7 @@ DATA=$(cat <<EOF
 {"target_id": $SUBSCRIBER_ID,
  "scope": "container",
  "test": "ping",
- "argument": "8.8.8.8"}
+ "argument": "172.24.100.50"}
 EOF
 )
 

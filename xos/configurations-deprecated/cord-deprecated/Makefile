@@ -91,7 +91,7 @@ cleanup: stop rm
 
 devstack_net_fix:
 	sudo ../common/devstack/net-fix.sh
-	sudo bash -c "source ../setup/admin-openrc.sh; neutron subnet-update private-subnet --dns-nameservers list=true 8.8.8.8 8.8.4.4"
+	sudo bash -c "source ../setup/admin-openrc.sh; neutron subnet-update private-subnet --dns-nameservers list=true 172.24.100.50 8.8.4.4"
 
 upgrade_pkgs:
 	sudo pip install httpie --upgrade

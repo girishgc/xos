@@ -1,5 +1,5 @@
 site_id=GetSites()[0]["site_id"]
-nodeinfo = {'hostname': "{{ node_hostname }}", 'dns': "8.8.8.8"}
+nodeinfo = {'hostname': "{{ node_hostname }}", 'dns': "172.24.100.50"}
 n_id = AddNode(site_id, nodeinfo)
 mac = "DE:AD:BE:EF:00:01"
 interfacetemplate = {'mac': mac, 'kind': 'physical', 'method': 'static', 'is_primary': True, 'if_name': 'eth0'}

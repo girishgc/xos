@@ -7,7 +7,7 @@
     eth_mac: 02:42:CF:8D:C0:82
     cmi_password: XOScdn123$
     cmi_hostname: xos-cloudlab-cmi-vtn.opencloud.us
-    cmi_dns: 8.8.8.8
+    cmi_dns: 172.24.100.50
     cdn_site: CoBlitz Test
     cdn_short_name: cobtest
     cdn_name: CoBlitz
