@@ -1,0 +1,47 @@
+{
+    "Node": [
+        "Site", 
+        "Deployment"
+    ], 
+    "Slice": [
+        "Site"
+    ], 
+    "ReservedResource": [
+        "Instance"
+    ], 
+    "SliceMembership": [
+        "User", 
+        "Slice", 
+        "Role"
+    ], 
+    "NetworkSlice": [
+        "Network", 
+        "Slice"
+    ], 
+    "Tag": [
+        "Project"
+    ], 
+    "User": [
+        "Site"
+    ], 
+    "SliceTag": [
+        "Slice"
+    ], 
+    "Reservation": [
+        "Slice"
+    ], 
+    "NetworkInstance": [
+        "Network", 
+        "Instance"
+    ], 
+    "SitePrivilege": [
+        "User", 
+        "Site", 
+        "Role"
+    ], 
+    "Instance": [
+        "Image", 
+        "Slice", 
+        "Node"
+    ]
+}

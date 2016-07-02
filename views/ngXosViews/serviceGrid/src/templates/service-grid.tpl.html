@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-10 table-responsive">
+    <xos-table config="vm.tableConfig" data="vm.services"></xos-table>
+  </div>
+  <div class="col-md-2">
+    <a href="/admin/core/service/add" class="btn btn-success btn-block">
+      <i class="glyphicon glyphicon-plus"></i>
+      Add Service
+    </a>
+    <!-- <a href="#/graph" class="btn btn-default btn-block">
+      Tenancy Graph
+    </a> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="alert alert-info" ng-show="vm.showFeedback">
+      Remember that you should copy any key artifact inside the container in <pre>/opt/xos/tosca</pre>!
+    </div>
+  </div>
+</div>
+
+<pre ng-show="vm.tosca">
+{{vm.tosca}}
+</pre>

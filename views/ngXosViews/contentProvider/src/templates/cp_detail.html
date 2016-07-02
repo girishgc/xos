@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-xs-6">
+    <h1>{$ vm.cp.humanReadableName $}</h1>
+  </div>
+  <div class="col-xs-6 text-right">
+    <cp-actions id="vm.cp.id"></cp-actions>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div ng-show="vm.cp.id" class="col-xs-2">
+    <div ng-include="'templates/cp_side_nav.html'"></div>
+  </div>
+  <div ng-class="{'col-xs-10': vm.cp.id, 'col-xs-12': !vm.cp.id}">
+  <!-- TODO hide form on not found -->
+    <form ng-submit="vm.saveContentProvider(vm.cp)">
+      <fieldset>
+        <div class="row">
+          <div class="col-xs-6">
+            <label>Name:</label>
+            <input class="form-control" type="text" ng-model="vm.cp.humanReadableName" required/>
+          </div>
+          <div class="col-xs-6">
+            <label class="checkbox">
+              <input class="form-control" type="checkbox" ng-model="vm.cp.enabled" /> Enabled
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Description</label>
+            <textarea class="form-control" ng-model="vm.cp.description"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Service provider</label>
+            <select class="form-control" required ng-model="vm.cp.serviceProvider" ng-options="sp.id as sp.humanReadableName for sp in vm.sp"></select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-success">
+              <span ng-show="vm.cp.id">Save</span>
+              <span ng-show="!vm.cp.id">Create</span>
+            </button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="alert" ng-show="vm.result" ng-class="{'alert-success': vm.result.status === 1,'alert-danger': vm.result.status === 0}">
+      {$ vm.result.msg $}
+    </div>
+  </div>
+</div>

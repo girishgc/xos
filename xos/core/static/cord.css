@@ -1,0 +1,43 @@
+/* login page background image */
+.login {
+    background-image: url('cord_bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* login page logo */
+.login #content-main h1 {
+    background: url("cord_logo_3.png") no-repeat scroll 40% center / 89% auto rgba(235, 240, 242, 0);
+    height: 55px;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    padding-top: 70px;
+}
+
+/* content page logo */
+.logo {
+   display: block;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background: url('cord_logo_3_cropped_sized.png') no-repeat;
+   width: 250px;
+   height: 96px;
+   padding-left: 250px;
+}
+
+/* content page header, adjust the margin to match logo */
+.header{
+    margin-top: -100px !important;
+}
+
+/* hide the quick search box */
+.nav-quick-search {
+    display: None;
+}
+
+
+
+
+
+
+
