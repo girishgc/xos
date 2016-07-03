@@ -16,31 +16,31 @@ $(SERVICE_DIR):
 	mkdir -p $(SERVICE_DIR)
 
 $(SERVICE_DIR)/exampleservice:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/exampleservice.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/exampleservice.git
 
 $(SERVICE_DIR)/olt:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/olt.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/olt.git
 
 $(SERVICE_DIR)/vsg:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/vsg.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/vsg.git
 
 $(SERVICE_DIR)/vtn:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/vtn.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/vtn.git
 
 $(SERVICE_DIR)/vrouter:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/vrouter.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/vrouter.git
 
 $(SERVICE_DIR)/vtr:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/vtr.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/vtr.git
 
 $(SERVICE_DIR)/onos-service:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/onos-service.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/onos-service.git
 
 $(SERVICE_DIR)/fabric:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/fabric.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/fabric.git
 
 $(SERVICE_DIR)/monitoring:
-	git -C $(SERVICE_DIR) clone https://gerrit.opencord.org/p/monitoring.git
+	git -C $(SERVICE_DIR) clone https://github.com/girishgc/monitoring.git
 
 cleanup:
 	rm -rf $(SERVICE_DIR)/*

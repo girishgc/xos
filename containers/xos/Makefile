@@ -17,7 +17,7 @@ NO_DOCKER_CACHE    ?= false
 CONTAINER_NAME     ?= xos-server
 IMAGE_NAME         ?= xosproject/xos
 
-XOS_GIT_REPO       ?= git://github.com/open-cloud/xos.git
+XOS_GIT_REPO       ?= https://github.com/girishgc/xos.git
 XOS_GIT_BRANCH     ?= master
 
 TOSCA_CONFIG_PATH  ?= /opt/xos/configurations/opencloud/opencloud.yaml

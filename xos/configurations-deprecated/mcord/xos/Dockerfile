@@ -73,7 +73,7 @@ RUN easy_install \
 ADD http://code.jquery.com/jquery-1.9.1.min.js /usr/local/lib/python2.7/dist-packages/suit/static/suit/js/
 
 # Install XOS
-RUN git clone git://github.com/open-cloud/xos.git /tmp/xos && \
+RUN git clone git://github.com/girishgc/xos.git /tmp/xos && \
     mv /tmp/xos/xos /opt/ && \
     chmod +x /opt/xos/tools/xos-manage && \
     /opt/xos/tools/xos-manage genkeys

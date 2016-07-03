@@ -21,6 +21,6 @@ ENV PATH $PATH:$KARAF_ROOT/bin
 #Download build environment for ONOS
 WORKDIR /src
 RUN     apt-get update && apt-get install -y python maven git curl oracle-java8-installer oracle-java8-set-default && \
-        git clone https://github.com/opennetworkinglab/onos.git && cd onos
+        git clone https://github.com/girishgc/onos.git && cd onos
 
 RUN echo ". /src/onos/tools/dev/bash_profile" >> /root/.bashrc
